@@ -1,7 +1,11 @@
+import math
+sp=[1,2,3,4,5,6,7]
+k= len(sp)
+c=k/2
+s=math.ceil(c)
+print(sp[0:s],sp[s:k])
 
-x=[input()]
-print(x)
-y=len(x)
-x.insert(0,y)
-z=x.pop(y)
-print(x)
+
+
+
+
