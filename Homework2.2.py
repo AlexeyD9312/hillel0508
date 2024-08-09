@@ -6,6 +6,7 @@
 #n5=number//10000
 #print(n1,n2,n3,n4,n5)
 
-a=input("Your number:")
-b=(a[::-1])
-print(b)
+c=input("Your number:")
+d=(c[::-1])
+print(d)
+print('hello')
