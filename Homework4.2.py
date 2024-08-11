@@ -1,6 +1,15 @@
-x=[1,3,5,0,7,4,232,64,3,56,6]
-y=[x for x in x if not x%2]
-z=x[-1]
-r=sum(y)
-i=r*z
-print(i)
+x=[]
+l=len(x)
+y=x[::2]
+z=sum(y)
+if l>0:
+ m = x[-1]
+ print(m*z)
+else:
+ print(0)
+
+
+
+
+
+
