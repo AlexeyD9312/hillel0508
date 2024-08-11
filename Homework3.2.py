@@ -1,5 +1,8 @@
-x=[1,2,3,4,5,6]
-y=len(x)
-x.insert(0,y)
-z=x.pop()
+from copy import deepcopy
+x=[90,43,84,0,6,87]
+y=deepcopy(x)
+y.insert(0,y[-1])
+z=y.pop()
 print(x)
+print(y)
+
