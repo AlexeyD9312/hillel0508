@@ -1,8 +1,6 @@
-from copy import deepcopy
-x=[90,43,84,0,6,87]
-y=deepcopy(x)
-y.insert(0,y[-1])
-z=y.pop()
+x=[1,44,6,56,0,98,90,44,32,6,6,0,5]
+z=x.pop()
+x.insert(0,z)
 print(x)
-print(y)
+
 
