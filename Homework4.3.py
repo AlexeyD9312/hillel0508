@@ -1,6 +1,6 @@
 import random
 x=[]
-ran=random.randint(3,8)
+ran=random.randint(3,10)
 for i in range(ran,13,1):
     x.append(random.randint(0,100))
 print(x)
