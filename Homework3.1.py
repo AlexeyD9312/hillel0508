@@ -1,22 +1,22 @@
 x=float(input('число 1:'))
 d=input('математична дія:')
 y=float(input('число 2:'))
-if '*' in d:
-    print('дорівнює',x*y)
-else:
-    if '+' in d:
+if y!=0:
+    if '*' in d:
+        print('дорівнює',x*y)
+    elif '+' in d:
         print('дорівнює', x + y)
+    elif '-' in d:
+        print('дорівнює', x - y)
+    elif '/' in d and y!=0:
+           print('дорівнює', x / y)
     else:
-        if '-' in d:
-            print('дорівнює', x - y)
-        else:
-            if y==0:
-                print("на 0 дiлити не можна")
-            else:
-                if '/' in d:
-                    print('дорівнює', x / y)
-                else:
-                    print('некоректна математична дія!')
+           print("некоректна дія")
+else:
+    print('not dilit na 0')
+
+
+
 
 
 #у цій программі може обчислюватися лише 2 числа
