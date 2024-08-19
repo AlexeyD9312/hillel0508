@@ -1,8 +1,6 @@
-name=input('Enter name:')
-nuber_list=('1','2','3','4','5','6','7','8','9','0')
-punctuation_list=('!','"','#','$','%','&',' ','(',')','*','+', '-','.','/',':',';','<','=','>','?','@','[',']','^','`','|','}','~')
-reg_list=('false','await','else','import','pass','true','break','except','in','raise','none','class','finally',	'is','return','and','continue',	'for','lambda','try','as','def','from','nonlocal','while','assert','del','global','not','with','async',	'elif','if'	,'or',	'yield')
-print(not any(i in name[0] for i in nuber_list))
-print(name.islower())
-print(not any(i in name for i in punctuation_list))
-print(name not in reg_list)
+import string
+import keyword
+name = input('Enter name:')
+print(not any(i in name for i in string.punctuation)
+      and not any(i in name for i in ' ')
+      and name[0].isalpha() and name.isupper() and name == keyword.kwlist)
