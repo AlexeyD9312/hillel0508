@@ -1,3 +1,4 @@
-#hashtag = input('Enter hastag :')
-#print(hashtag.capitalize())
-print('#' + ''.join([i for name in input('Enter name:').split() for i in name.title() if i.isalpha()])[:140])
+hashtag = input('Enter name :')
+print('#' +''.join([i for name in hashtag.split() for i in name.capitalize() if i.isalpha()])[:140])
+
+
