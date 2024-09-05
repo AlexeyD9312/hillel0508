@@ -1,7 +1,8 @@
 import re
+
 def second_index(text, symbol):
     if text.count(symbol) > 1:
-      matches = re.finditer(symbol,text)
+      matches = re.finditer(symbol, text)
       indices = [match.start() for match in matches]
       print(indices[1])
     else:
