@@ -7,7 +7,9 @@ def add_one(some_list):
             digits += [some_list % 10]
             some_list //= 10
         return digits[::-1] or [0]
-some_list = input("Введіть числа:")
+    print(digits_iterative(some_list))
+
+some_list = [1,2,3,4,5]
 print(add_one(some_list))
 assert add_one([1, 2, 3, 4]) == [1, 2, 3, 5], 'Test1'
 assert add_one([9, 9, 9]) == [1, 0, 0, 0], 'Test2'
