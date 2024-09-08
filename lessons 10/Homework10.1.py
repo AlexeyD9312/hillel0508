@@ -2,12 +2,14 @@ def pow(x):
     return x ** 2
 
 def some_gen(begin, end, func):
-    n = 1
-    while n <= end:
+     for _ in range(end):
         yield begin
-        begin = pow(begin)
-        n += 1
+        begin = func(begin)
+
+print(list(some_gen(2, 5, pow)))
+
+from inspect import isgenerator
 
 gen = some_gen(2, 4, pow)
-for value in gen:
-    print(list[value])
+assert isgenerator(gen) == True, 'Test1'
+assert list(gen) == [2, 4, 16, 256], 'Test2'
